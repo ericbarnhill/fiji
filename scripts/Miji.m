@@ -1,4 +1,4 @@
-function [mij] = Miji(open_imagej)
+function Miji(open_imagej)
     %% This script sets up the classpath to Fiji and optionally starts MIJ
     % Author: Jacques Pecreaux, Johannes Schindelin, Jean-Yves Tinevez
     % GNU Octave compatibility added by Eric Barnhill, Jul 2016
@@ -97,4 +97,3 @@ function test = not_yet_in_classpath(classpath, filename)
 expression = strcat([filesep filename '$']);
 test = isempty(cell2mat(regexp(classpath, expression)));
 end
-
